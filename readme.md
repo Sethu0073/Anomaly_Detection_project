@@ -32,3 +32,49 @@ The [MVTec AD dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)
 - **Test Set**: Contains both *good* and *defective* samples.
 
 **Note:** Download and organize the dataset manually as follows:
+## Anomaly_Detection_project/
+├── Train/
+│ └── good/
+│ └── ... (normal training images)
+├── Test/
+│ ├── good/
+│ └── defect_type/
+
+---
+
+## 🚀 Getting Started
+
+These instructions will help you get the project running locally for experimentation and testing.
+
+### Prerequisites
+
+- Python 3.7+
+- Git
+- pip or conda
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Sethu0073/Anomaly_Detection_project.git
+cd Anomaly_Detection_project
+
+2. **Create a virtual environment**
+python -m venv venv
+# Activate the environment
+source venv/bin/activate        # For macOS/Linux
+venv\Scripts\activate           # For Windows
+pip install -r requirements.txt
+
+python mvtec.py
+
+Anomaly_Detection_project/
+├── Train/
+│   └── good/
+├── Test/
+│   ├── good/
+│   └── defect_type/
+├── mvtec.py                # Main training and evaluation script
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+
